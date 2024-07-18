@@ -43,7 +43,7 @@ def app():
     # Cargar datasets
     classes_df = load_classes()
 
-    st.title('Elden Ring - Analysis of Classes')
+    st.title('Analysis of Elden Ring Classes')
     st.subheader('')
 
     #---SIDEBAR
