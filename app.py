@@ -78,7 +78,7 @@ def app():
         # Mostrar imagen y descripción
         col_image, col_info = st.columns([1, 2])
         with col_image:
-            st.image(selected_class_df.iloc[0]['image'], use_column_width=True)
+            st.image(selected_class_df.iloc[0]['image'], use_container_width=True)
         with col_info:
             st.subheader(selected_class_df.iloc[0]['name'])
             st.write(selected_class_df.iloc[0]['description'])
@@ -158,7 +158,7 @@ def app():
             with col1:
                 st.markdown(f"<p style='text-align: center;'>{weapons_df.iloc[0]['name']}</p>", unsafe_allow_html=True)
                 with col_img1:
-                    st.image(weapons_df.iloc[0]['image'], use_column_width=True)
+                    st.image(weapons_df.iloc[0]['image'], use_container_width=True)
                 with col_txt1:
                     st.write(f"Category: {weapons_df.iloc[0]['category']}")
                     st.write(f"Weight: {weapons_df.iloc[0]['weight']}")
@@ -168,7 +168,7 @@ def app():
             with col3:
                 st.markdown(f"<p style='text-align: center;'>{weapons_df.iloc[1]['name']}</p>", unsafe_allow_html=True)
                 with col_img2:
-                    st.image(weapons_df.iloc[1]['image'], use_column_width=True)
+                    st.image(weapons_df.iloc[1]['image'], use_container_width=True)
                 with col_txt2:
                     st.write(f"Category: {weapons_df.iloc[1]['category']}")
                     st.write(f"Weight: {weapons_df.iloc[1]['weight']}")
@@ -182,7 +182,7 @@ def app():
             with col1:
                 st.markdown(f"<p style='text-align: center;'>{weapons_df.iloc[0]['name']}</p>", unsafe_allow_html=True)
                 with col_wretch_img:
-                    st.image(weapons_df.iloc[0]['image'], use_column_width=True)
+                    st.image(weapons_df.iloc[0]['image'], use_container_width=True)
                     with col_wretch_txt:
                         st.write(f"Category: {weapons_df.iloc[0]['category']}")
                         st.write(f"Weight: {weapons_df.iloc[0]['weight']}")
@@ -194,3 +194,4 @@ if __name__ == '__main__':
     # Configuración de la página
     st.set_page_config(layout='wide')
     app()
+
